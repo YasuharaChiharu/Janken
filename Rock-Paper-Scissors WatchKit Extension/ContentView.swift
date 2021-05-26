@@ -9,13 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        List {            
+            NavigationLink(destination: JankenView(select_num: 3)) {
+                Text("Janken")
+                    .font(.title2)
+                    .foregroundColor(Color.orange)
+            }
+            NavigationLink(destination: JankenView(select_num: 2)) {
+                Text("GuuPaa")
+                    .font(.title2)
+                    .foregroundColor(Color.orange)
+            }
+        }.listStyle(CarouselListStyle())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.locale, .init(identifier: "ja"))
     }
 }

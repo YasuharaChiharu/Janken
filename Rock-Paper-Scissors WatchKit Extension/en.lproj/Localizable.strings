@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Rock-Paper-Scissors
+
+  Created by Yasuhara Chiharu on R 3/05/18.
+  
+*/
+"Janken" = "Rock Paper Scissors";
+"GuuPaa" = "Rock Paper";

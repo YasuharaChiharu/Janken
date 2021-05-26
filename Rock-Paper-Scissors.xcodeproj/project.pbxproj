@@ -19,6 +19,8 @@
 		668B487A26539A8200371541 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668B487926539A8200371541 /* Preview Assets.xcassets */; };
 		668B488626539A8200371541 /* Rock_Paper_ScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668B488526539A8200371541 /* Rock_Paper_ScissorsTests.swift */; };
 		668B489126539A8200371541 /* Rock_Paper_ScissorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668B489026539A8200371541 /* Rock_Paper_ScissorsUITests.swift */; };
+		668B48A726539ADC00371541 /* JankenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668B48A626539ADC00371541 /* JankenView.swift */; };
+		668B48AA26539CDA00371541 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 668B48AC26539CDA00371541 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		668B485726539A8000371541 /* Rock-Paper-Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock-Paper-Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		668B485726539A8000371541 /* Janken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Janken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668B485B26539A8000371541 /* Rock-Paper-Scissors WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock-Paper-Scissors WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		668B486026539A8100371541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668B486226539A8100371541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +100,9 @@
 		668B488C26539A8200371541 /* Rock-Paper-ScissorsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rock-Paper-ScissorsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		668B489026539A8200371541 /* Rock_Paper_ScissorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsUITests.swift; sourceTree = "<group>"; };
 		668B489226539A8200371541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668B48A626539ADC00371541 /* JankenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenView.swift; sourceTree = "<group>"; };
+		668B48AB26539CDA00371541 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		668B48AE26539D8500371541 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +144,7 @@
 		668B485826539A8000371541 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				668B485726539A8000371541 /* Rock-Paper-Scissors.app */,
+				668B485726539A8000371541 /* Janken.app */,
 				668B485B26539A8000371541 /* Rock-Paper-Scissors WatchKit App.app */,
 				668B486726539A8100371541 /* Rock-Paper-Scissors WatchKit Extension.appex */,
 				668B488126539A8200371541 /* Rock-Paper-ScissorsTests.xctest */,
@@ -169,6 +174,8 @@
 				668B487B26539A8200371541 /* Info.plist */,
 				668B487C26539A8200371541 /* PushNotificationPayload.apns */,
 				668B487826539A8200371541 /* Preview Content */,
+				668B48A626539ADC00371541 /* JankenView.swift */,
+				668B48AC26539CDA00371541 /* Localizable.strings */,
 			);
 			path = "Rock-Paper-Scissors WatchKit Extension";
 			sourceTree = "<group>";
@@ -216,7 +223,7 @@
 			);
 			name = "Rock-Paper-Scissors";
 			productName = "Rock-Paper-Scissors";
-			productReference = 668B485726539A8000371541 /* Rock-Paper-Scissors.app */;
+			productReference = 668B485726539A8000371541 /* Janken.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		668B485A26539A8000371541 /* Rock-Paper-Scissors WatchKit App */ = {
@@ -324,6 +331,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 668B485026539A8000371541;
 			productRefGroup = 668B485826539A8000371541 /* Products */;
@@ -360,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				668B487A26539A8200371541 /* Preview Assets.xcassets in Resources */,
+				668B48AA26539CDA00371541 /* Localizable.strings in Resources */,
 				668B487726539A8200371541 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +399,7 @@
 				668B487526539A8100371541 /* ComplicationController.swift in Sources */,
 				668B486D26539A8100371541 /* Rock_Paper_ScissorsApp.swift in Sources */,
 				668B487326539A8100371541 /* NotificationView.swift in Sources */,
+				668B48A726539ADC00371541 /* JankenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +443,18 @@
 			targetProxy = 668B488D26539A8200371541 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		668B48AC26539CDA00371541 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				668B48AB26539CDA00371541 /* en */,
+				668B48AE26539D8500371541 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		668B489326539A8200371541 /* Debug */ = {
@@ -645,7 +667,7 @@
 				DEVELOPMENT_TEAM = Y6V36P2Q3X;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chi-haru.Rock-Paper-Scissors";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Janken;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -658,7 +680,7 @@
 				DEVELOPMENT_TEAM = Y6V36P2Q3X;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chi-haru.Rock-Paper-Scissors";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Janken;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
